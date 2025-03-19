@@ -1,9 +1,31 @@
-# 1IMA
+# 1IMA Study Resources
 
-I have gathered what i can of relevant information regarding several classes.
-I am trying to expand on this, but it will be lacking for a while. 
-This repository also servers as my personal documentation.
+My personal collection of study materials and notes for 1IMA.
 
+## Subjects
 
-* [Teknologiforståelse](./Teknologiforståelse/Teknologiforståelse.md)
+- [Teknologiforståelse](./subjects/teknologiforstaelse/README.md)
+- [Add more subjects here]
+
+## Navigation
+
+Each subject folder contains:
+- Course overview
+- Notes
+- Assignments
+- Resources
+
+## How to Use This Repository
+
+1. Navigate to the subject you're interested in
+2. Check the subject's README for an overview
+3. Explore folders for specific content (lecture notes, assignments, etc.)
+
+## Contributing
+
+See [contributing.md](./contributing.md) for guidelines on how to add or update content.
+
+## Recent Updates
+
+Check the [CHANGELOG.md](./CHANGELOG.md) for recent updates to the repository.
 
