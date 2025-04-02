@@ -83,6 +83,39 @@ Skrives som `/X` der X er antall bits satt til `1` i nettverksmasken.
 
 ---
 
+## 🔢 Subnett og subnetting – Eksempel og forklaring
+
+Subnetting handler om å dele opp et nettverk i flere mindre deler (subnett). Dette er nyttig for:
+- Bedre struktur og oversikt
+- Begrense broadcast-trafikk
+- Øke sikkerhet ved segmentering
+
+### Eksempel: /24 til /26
+Vi starter med et **/24-nettverk**:
+```
+192.168.1.0/24 → 256 adresser (0–255)
+```
+Deler vi dette opp i **/26-subnett**, får vi:
+```
+192.168.1.0/26     → 192.168.1.0 – 192.168.1.63
+192.168.1.64/26    → 192.168.1.64 – 192.168.1.127
+192.168.1.128/26   → 192.168.1.128 – 192.168.1.191
+192.168.1.192/26   → 192.168.1.192 – 192.168.1.255
+```
+Hvert subnett har:
+- 64 IP-adresser totalt
+- 62 brukbare adresser (1 til gateway, 1 til broadcast)
+
+### Generell formel
+```
+Antall subnett = 2ⁿ, der n = antall ekstra bits brukt
+Antall brukbare IP-er = 2ⁿ - 2 (nettverksadresse og broadcastadresse)
+```
+
+Vil du beregne manuelt? Konverter subnettmasken til binær og tell antall 0-er i host-delen.
+
+---
+
 ## 🛠️ Andre viktige nettverksbegreper
 
 ### DHCP (Dynamic Host Configuration Protocol)
@@ -112,10 +145,6 @@ Brukes internt i nettverk, ikke rutbare på internett.
 - Brukes for å finne MAC-adressen til en IP-adresse i samme nettverk.
 - Viktig i lokal kommunikasjon på Ethernet.
 
-### Subnett og subnetting
-- Deler et stort nettverk i mindre, mer oversiktlige deler.
-- Viktig for økt sikkerhet, ytelse og struktur i større nettverk.
-
 ### TCP vs UDP
 - Begge er transportprotokoller som brukes til å sende data over IP-nettverk.
 
@@ -127,4 +156,9 @@ Brukes internt i nettverk, ikke rutbare på internett.
 #### UDP (User Datagram Protocol):
 - **Tilkoblingsløs**: Ingen håndtrykk eller bekreftelse.
 - **Raskere, men upålitelig**: Ingen garanti for levering eller rekkefølge.
-- **Brukes av**: D
+- **Brukes av**: DNS, VoIP, videostrømming, online gaming
+
+---
+
+Vil du at jeg skal legge til et kapittel om IPv6, eller forklare subnetting med øvelser?
+
