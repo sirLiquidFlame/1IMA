@@ -159,6 +159,3 @@ Brukes internt i nettverk, ikke rutbare på internett.
 - **Brukes av**: DNS, VoIP, videostrømming, online gaming
 
 ---
-
-Vil du at jeg skal legge til et kapittel om IPv6, eller forklare subnetting med øvelser?
-
